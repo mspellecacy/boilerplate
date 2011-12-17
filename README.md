@@ -18,6 +18,7 @@ rm -rf .git/
 find . -type f | xargs perl -pi -e 's/Boilerplate/Yourapp/g'
 find . -type f | xargs perl -pi -e 's/boilerplate/yourapp/g'
 git init
+git add .
 git commit -m 'Initial Commit'
 
 
