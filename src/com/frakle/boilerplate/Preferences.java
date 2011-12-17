@@ -1,22 +1,26 @@
 package com.frakle.boilerplate;
 
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
-import android.preference.PreferenceManager;
+import android.util.Log;
 
 
 public class Preferences extends PreferenceActivity {
 	
-	
+	//For Logging Purposes. 
+	private static final String TAG = Preferences.class.getSimpleName();
+	private static final boolean DEBUG = true;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 
 		super.onCreate(savedInstanceState);
-		SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
-		
+
 		addPreferencesFromResource(R.xml.preferences);
+		
+		if(DEBUG){
+        	Log.v(TAG,"onCreate()'d");
+        }
 		
 	}
 }

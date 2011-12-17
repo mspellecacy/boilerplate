@@ -6,7 +6,7 @@
         android:key="accountInfo">
         
         <EditTextPreference 
-			android:title="User Name"
+			android:title="Username"
 			android:key="username"
 			android:summary="Your Account Username"
 			android:defaultValue="changeMe" />
