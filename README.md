@@ -10,4 +10,15 @@ Boilerplate Android Application
 
 Notes
 =====
+After initial clone you'll probably want to do this...
 
+mv /path/to/boilerplate /path/to/yourapp
+cd /path/to/yourapp
+rm -rf .git/
+find . -type f | xargs perl -pi -e 's/Boilerplate/Yourapp/g'
+find . -type f | xargs perl -pi -e 's/boilerplate/yourapp/g'
+git init
+git commit -m 'Initial Commit'
+
+
+- Enjoy!
