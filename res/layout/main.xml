@@ -19,4 +19,5 @@
                         ads:adSize="BANNER"
                         ads:testDevices="TEST_EMULATOR"
                         ads:loadAdOnCreate="true"/>
+    
 </LinearLayout>
