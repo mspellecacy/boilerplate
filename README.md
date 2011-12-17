@@ -12,6 +12,7 @@ Notes
 =====
 After initial clone you'll probably want to do this...
 
+
 mv /path/to/boilerplate /path/to/yourapp
 cd /path/to/yourapp
 rm -rf .git/
